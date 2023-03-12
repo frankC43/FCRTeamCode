@@ -30,6 +30,7 @@ If the work is carried out using illicit ways, the grade in the continuous asses
 members of the team will be zero.
 
    GUIDES FOR DEVELOPING THE WORK
+   
 For developing Phase 1, lab session 1 of unit 0, which introduces the programming language
 C/C++, is required.
 In the FCR Hacking Force web site you can find a section with resources such as documents and

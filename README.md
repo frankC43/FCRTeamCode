@@ -1,4 +1,7 @@
 # FCRTeamCode
+
+  FAST LINK TO INSTRUCTIONS : https://www.campusvirtual.uniovi.es/pluginfile.php/187737/mod_resource/content/6/Teamwork_Instructions_2023_Oviedo.pdf
+
 Repository used to store all the files of the teamwork C++ project of the subject of Computing and Networks.
 
 Cada vez que terminemos un avance en el código del trabajo, se sube a este repositorio, a poder ser con un comentario de los cambios y con una versión

@@ -1,2 +1,12 @@
-﻿  Teamwork.cpp
-  Teamwork.vcxproj -> C:\Users\Administrador\Desktop\FCR  Project files\First Phase\Teamwork\Debug\Teamwork.exe
+﻿  Assembling Assembly-code.asm...
+Assembly-code.asm(10): error A2008: syntax error : ,
+Assembly-code.asm(11): error A2008: syntax error : ,
+Assembly-code.asm(12): error A2008: syntax error : ,
+Assembly-code.asm(23): error A2008: syntax error : brns
+Assembly-code.asm(24): error A2008: syntax error : end
+Assembly-code.asm(27): error A2008: syntax error : brz
+Assembly-code.asm(28): error A2008: syntax error : end
+Assembly-code.asm(37): error A2008: syntax error : equalsInB
+Assembly-code.asm(42): error A2008: syntax error : end
+Assembly-code.asm(58): fatal error A1010: unmatched block nesting : IsValidAssembly
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\Assembly-code.obj" /W3 /errorReport:prompt  /Ta"Assembly-code.asm"" exited with code 1.

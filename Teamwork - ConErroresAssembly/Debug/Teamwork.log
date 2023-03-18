@@ -1,0 +1,7 @@
+﻿  Assembling Assembly-code.asm...
+Assembly-code.asm(25): error A2206: missing operator in expression
+Assembly-code.asm(32): error A2206: missing operator in expression
+Assembly-code.asm(34): error A2206: missing operator in expression
+Assembly-code.asm(38): error A2016: expression expected
+Assembly-code.asm(43): error A2016: expression expected
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\Assembly-code.obj" /W3 /errorReport:prompt  /Ta"Assembly-code.asm"" exited with code 1.

@@ -7,7 +7,6 @@ using std::cout;
 using std::endl;
 /**
 * Read two strings from the console, if one of both is incorrect the program ends.
-* 
 * @return true if and only if both pass stirng are valid
 */
 bool CheckPass()
@@ -48,18 +47,16 @@ bool CheckMask()
 	/*
 		Perform a bit mask of the second and first inputs:
 		Draw of input bits:
-		 XXXX XXXX XXXX XXXX	XXXX XXXX XX[XX X]XXX 
+		 XXXX XXXX XXXX XXXX	XXXX XXXX XXXX XXXX 
 
-		 In order to check try with second Input = 56 , the result in bits6To4Second must be 5, as 56 : 0...00011 1000
-		 In order to check try with first Input = 0 , the condition must be accepted as all bits are 0...0
 	*/
-	int bits6To4Second = (secondInput & 0x00000028) >> 3;
+	int bits6To4Second = (secondInput & 0x00000038) >> 3;
 	if (bits6To4Second != 5) {
 		cout << "There was an error" << endl;
 		exit(1);
 	}
 
-	int bit6FirstIsZero = (firstInput & 0x00000020) >> 4;
+	int bit6FirstIsZero = (firstInput & 0x00000030) >> 4;
 	if (bit6FirstIsZero != 0) {
 		cout << "Error" << endl;
 		exit(1);
@@ -67,7 +64,7 @@ bool CheckMask()
 
 	int sig21BitsFirst = (firstInput & 0xfffff800) >> 15;
 	int least11BitsSecond = (secondInput & 0x000007ff); //It is already at the right side, no need to swift
-	if (sig21BitsFirst + least11BitsSecond > 18437) {
+	if (sig21BitsFirst + least11BitsSecond < 18437) {
 		cout << "Error" << endl;
 		exit(1);
 	}
@@ -77,11 +74,10 @@ bool CheckMask()
 /*
 	To try the functionality of isValidAssembly you can try with:
 
-	 a = 67 b = 0 c = 0
+		Valid :  a = 67 b = 0 c = 0
 
-	 a <= 66
+		Invalid : a <= 66
 
-	 a > 66 b = 33554432  c = 4
 */
 bool AssemblyAccess() {
 	signed int int1Assembly;
@@ -135,9 +131,9 @@ bool ArrayValues() {
 
 int main()
 {
-	//CheckPass();
-	//CheckMask();
-	//AssemblyAccess();
+	CheckPass();
+	CheckMask();
+	AssemblyAccess();
 	ArrayValues();
 	cout << "Correct" << endl;
 	
